@@ -4,13 +4,13 @@
 
 /**
 
- * main - Entry point
+ * main - prints a text
 
- *
-
- * Return: Always 0 (Success)
+ * Return: always 0 (success)
 
  */
+
+
 
 int main(void)
 
