@@ -7,7 +7,7 @@
 * Description: using the main function
 * this program prints "Programming is positive, zero, or negative
 * Return: 0
-* */
+*/
 int main(void)
 {
 int n;
@@ -17,15 +17,15 @@ n = rand() - RAND_MAX / 2;
 	
 if (n > 0)
 {
-printf("%di is positive\n", n);
+printf("%d is positive\n", n);
 }
 else if (n == 0)
 {
-printf("%di is zero\n", n);
+printf("%d is zero\n", n);
 }
 else if (n < 0)
 {
-printf("%di is negative\n", n);
+printf("%d is negative\n", n);
 }
 return (0);
 }
