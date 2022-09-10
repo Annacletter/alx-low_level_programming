@@ -16,6 +16,9 @@ num++;
 }
 while (letter <= 'f')/*print a to f*/
 {
+putchar(letter);
+letter++;
+}
 putchar('\n');
 return (0);
 }
