@@ -20,7 +20,7 @@ for (tens2 = '0'; tens2 <= '9'; tens2++)/*prints tens digit*/
 for (ones2 = '0'; ones <= '9'; ones2++)/*prints ones digit*/
 {
 if ((((ones == 0) &&
-(ones2 == 0) ||
+(ones2 == 0)) ||
 (ones < ones2)) &&
 (tens <= tens2))
 {
