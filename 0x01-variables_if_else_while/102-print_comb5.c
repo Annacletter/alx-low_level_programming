@@ -11,11 +11,11 @@ int ones = '0';
 int tens = '0';
 int tens2 = '0';
 int ones2 = '0';
-for (tens = '0', tens <= '9'; tens++)/*prints tens digit*/
+for (tens = '0'; tens <= '9'; tens++)/*prints tens digit*/
 {
 for (ones = '0'; ones <= '9'; ones++)/*prints ones digit*/
 {
-for (tens2 = '0', tens2 <= '9'; tens++)/*prints tens digit*/
+for (tens2 = '0'; tens2 <= '9'; tens++)/*prints tens digit*/
 {
 for (ones2 = '0'; ones2 <= '9'; ones++)/*prints ones digit*/
 {
