@@ -29,8 +29,8 @@ putchar(ones);
 putchar(' ');
 putchar(tens2);
 putchar(ones2);
-if (!(ones == '8' && tens == '9'
-	    ))/*addes comma and space*/
+if (!(ones == '8' && tens == '9' 
+))/*addes comma and space*/
 {
 putchar(',');
 putchar(' ');
