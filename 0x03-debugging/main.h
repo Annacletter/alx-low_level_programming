@@ -1,16 +1,7 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * positive_or_negative - checkes whether a number is positive or negative
- * Return: Always 0 (Success)
- */
+#include <stdlib.h>
 
-int main(void)
-{
-int i;
-
-i = 0;
-positive_or_negative(i);
-}
-return (0);
-}
+void positive_or_negative(int i);
+#endif
