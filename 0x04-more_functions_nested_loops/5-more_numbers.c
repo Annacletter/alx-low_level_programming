@@ -1,19 +1,25 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_most_numbers - prints from 0 to 9 except 2 and 4
- */
+ * more_numbers - entry point
+ * Description: prints numbers from 0 to 14,  times 10
+ * Return: 0
+*/
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-int i;
-for (i = 0; i <= 9; i++)
+char i;
+int counter;
+
+for (counter = 1; counter <= 10; counter++)
 {
-if ((i != 2) && (i != 4))
+for (i = 0; i <= 14; i++)
 {
-_putchar('0' + i);
-}
+if (i / 10 > 0)
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
 }
 _putchar('\n');
-Return (0);
+}
 }
