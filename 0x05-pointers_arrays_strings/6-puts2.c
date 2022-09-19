@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- *puts2 - returns the length of a string
- * @s: string
+ * puts2 - returns the length of a string
+ * @str: string
  * Return: Always 0 (Success)
  */
 
