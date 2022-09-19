@@ -20,8 +20,8 @@ else
 x = x / 2;
 while (str[x])
 {
-_putchar(str[x]);
+putchar(str[x]);
 x++;
 }
-_putchar('\n');
+putchar('\n');
 }
