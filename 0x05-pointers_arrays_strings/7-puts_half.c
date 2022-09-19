@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -9,6 +11,7 @@ void puts_half(char *str)
 {
 int x;
 x = 0;
+
 while (str[x])
 x++;
 if (x % 2 != 0)
