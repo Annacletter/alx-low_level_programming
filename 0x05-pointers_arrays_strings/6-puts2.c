@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
+ *puts2 - returns the length of a string
  * @s: string
  * Return: Always 0 (Success)
  */
