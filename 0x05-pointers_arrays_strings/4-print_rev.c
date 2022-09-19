@@ -3,19 +3,14 @@
 /**
  * print_rev - prints a string in the reverse followed by a new line
  * @s: a string to be printed
+ * Return: Always 0 (Success)
  */
 
 void print_rev(char *s)
 {
-int length, i;
+int len = strlen(s);
 
-for (length = 0; *s != '\0'; length++)
-++s;
-s--;
-for (i = length; i > 0; i--)
-{
-_putchar(*s);
-s--;
-}
-_putchar('\n');
+while (len--)
+putchar(*(s + len));
+putchar(10);
 }
