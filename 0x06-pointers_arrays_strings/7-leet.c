@@ -1,32 +1,24 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes letters
- * @s: string to capitalize
- * Return: return s
+ * leet - encode string into 1337 leet
+ * @s: string to manipulate
+ * Return: string
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
-int i = 0, j;
-char a[] = " \t\n,;.!?\"(){}";
+int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+int i, j;
 
-while (*(s + i))
+for (j = 0; s[j] != '\0'; j++)
 {
-if (*(s + i) >= 'a' && *(s + i) <= 'z')
+for (i = 0; a[i] != '\0'; i++)
 {
-if (i == 0)
-*(s + i) -= 'a' - 'A';
-else
-{
-for (j = 0; j <= 12; j++)
-{
-if (a[j] == *(s + i - 1))
-*(s + i) -= 'a' - 'A';
+if (s[j] == a[i])
+s[j] = b[i];
 }
-}
-}
-i++;
 }
 return (s);
 }
