@@ -1,42 +1,46 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - return string length
- * @s: string
- * Return: string length
+ * palind2 - obtains length of a
+ * @a: string
+ * @l: integer to count length
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-int _strlen_recursion(char *s)
-{	
-if (*s == '\0')
-return (0);
-return (1 + _strlen_recursion(++s));
-}
-
-/**
- * compare - compare head and tail indices for match
- * @head: index starting from left of string
- * @tail: index starting from right of string, moving backwards
- * Return: 1 if palindrome, 0 if not
- */
-
-int compare(char *head, char *tail)
+int palind2(char *a, int l)
 {
-if (head >= tail)
-return (1);
-if (*head == *tail)
-return (compare(head + 1, tail - 1));
-return (0);
+if (*a == 0)
+return (l - 1);
+return (palind2(a + 1, l + 1));
 }
 
 /**
- * is_palindrome - check if palindrome
- * @s: string to check
- * Return: 1 if palindrome, 0 if not
+ * palind3 - compares string vs string reverse
+ * @a: string
+ * @l: length
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int palind3(char *a, int l)
+{
+if (*a != *(a + l))
+return (0);
+else if (*a == 0)
+return (1);
+return (palind3(a + 1, l - 2));
+}
+
+/**
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to evaluate
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 int is_palindrome(char *s)
 {
-int len = _strlen_recursion(s);
-return (compare(s, (s + len - 1)));
+int l;
+l = palind2(s, 0);
+return (palind3(s, l));
 }
