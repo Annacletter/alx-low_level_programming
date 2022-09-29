@@ -12,6 +12,7 @@ if (*s == '\0')
 return (0);
 return (1 + _strlen_recursion(++s));
 }
+
 /**
  * compare - compare head and tail indices for match
  * @head: index starting from left of string
