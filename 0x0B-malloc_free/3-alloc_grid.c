@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,9 +9,8 @@
  * Return: pointer to 2d array
  */
 
-void **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
-int **grid;
 int i, j;
 
 if (width <= 0 || height <= 0) /* validate input */
