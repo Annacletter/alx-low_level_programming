@@ -7,7 +7,7 @@
  * Return: pointer to 2d array
  */
 
-void int **alloc_grid(int width, int height)
+void **alloc_grid(int width, int height)
 {
 int **grid;
 int i, j;
