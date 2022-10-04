@@ -1,30 +1,52 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * array_range - creates an array of integers
- * @min: start (min) of range of values to include
- * @max: max of range of values to include
- * Return: pointer to newly created array or NULL
+ * print_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
+ * Return: Nothing.
  */
 
-int *array_range(int min, int max)
+void print_grid(int **grid, int width, int height)
 {
-int *p, i;
+int w;
+int h;
 
-if (min > max)
-return (NULL);
-if (max - min == 0)
+h = 0;
+while (h < height)
 {
-p = malloc(sizeof(int));
-p[0] = min;
-}
-else
+w = 0;
+while (w < width)
 {
-p = malloc(sizeof(int) * (max - min + 1));
-if (p == NULL)
-return (NULL);
-for (i = 0; min <= max; i++, min++)
-p[i] = min;
+printf("%d ", grid[h][w]);
+w++;
 }
-return (p);
+printf("\n");
+h++;
+}   
+}
+
+/**
+ * main - check the code for ALX School students.
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+int **grid;
+grid = alloc_grid(6, 4);
+
+if (grid == NULL)
+{
+return (1);
+}
+print_grid(grid, 6, 4);
+printf("\n");
+grid[0][3] = 98;
+grid[3][4] = 402;
+print_grid(grid, 6, 4);
+return (0);
 }
