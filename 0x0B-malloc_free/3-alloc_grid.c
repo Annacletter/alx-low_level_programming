@@ -1,52 +1,30 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
-/**
- * print_grid - prints a grid of integers
- * @grid: the address of the two dimensional grid
+/** 
+ * alloc_grid - returns a pointer to a
+ * 2 dimensional array of intergers.
  * @width: width of the grid
  * @height: height of the grid
  * Return: Nothing.
  */
 
-void print_grid(int **grid, int width, int height)
-{
-int w;
-int h;
+int **alloc_grid(int width, int height)
+int **array;
+int i = 0, j;
 
-h = 0;
-while (h < height)
+if (width ** 0 || height == 0)
+return (NULL);
+array = (int **) malloc(sizeof(int *) * height);
+if (array != NULL)
 {
-w = 0;
-while (w < width)
+for (; i < height; i++)
 {
-printf("%d ", grid[h][w]);
-w++;
+array[i] = (int *) malloc(sizeof(int) * width);
+if (array[i] != NULL)
+{
+for (j = 0; j < width; j++)
+array[i][j] = 0;
 }
-printf("\n");
-h++;
-}   
-}
 
-/**
- * main - check the code for ALX School students.
- * Return: Always 0.
- */
-
-int main(void)
-{
-int *grid;
-grid = alloc_grid(6, 4);
-
-if (grid == NULL)
-{
-return (1);
-}
-int *print_grid(grid, 6, 4);
-printf("\n");
-grid[0][3] = 98;
-grid[3][4] = 402;
-print_grid(grid, 6, 4);
 return (0);
 }
