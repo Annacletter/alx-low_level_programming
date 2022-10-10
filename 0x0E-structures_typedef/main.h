@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "dog.h"
 #include "1-init_dog.c"
