@@ -1,12 +1,14 @@
+#include "lists.h"
 #include <stdio.h>
 
 /**
-  * b - prints from init by the loader before main
-  */
+ *  liebre_tortuga -function that executes before main
+ **/
 
-void b(void) __attribute__ ((constructor));
-void b(void)
+void liebre_tortuga(void)
 {
-printf("You're beat! and yet, you must allow,\n");
-printf("I bore my house upon my back!\n");
+char *string1, *string2;
+string1 = "You're beat! and yet, you must allow,\n";
+string2 = "I bore my house upon my back!\n";
+printf("%s%s", string1, string2);
 }
