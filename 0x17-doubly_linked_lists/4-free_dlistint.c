@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * free_dlistint - frees a doubly linked list with only int data,no strings
+ * free_dlistint - frees a doubly linked list with only int data, no strings
  * @head: pointer to head of list
  */
-
 void free_dlistint(dlistint_t *head)
 {
 	if (!head)
@@ -16,3 +15,4 @@ void free_dlistint(dlistint_t *head)
 		free(head->prev);
 	}
 	free(head);
+}
