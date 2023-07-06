@@ -6,10 +6,11 @@
  * @b: binary
  * Return: unsigned int
  */
+
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int number = 0, multiple = 1;
-int length;
+	unsigned int number = 0, multiple = 1;
+	int length;
 	if (b == NULL)
 		return (0);
 	for (length = 0; b[length];)
