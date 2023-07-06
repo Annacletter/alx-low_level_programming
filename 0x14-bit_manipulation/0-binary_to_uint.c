@@ -2,7 +2,7 @@
 #include "math.h"
 
 /**
- * Implementation of the binary_to_uint function that converts a binary to an unsigned int
+ * Implementating binary_to_uint function that converts a binary to an unsigned int
  * @b: binary
  * Return: unsigned int
  */
