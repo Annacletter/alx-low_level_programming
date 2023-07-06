@@ -7,14 +7,14 @@
  *
  * Return: value of the bit.
  */
-int get_bit(unsigned long int x, unsigned int index)
+int get_bit(unsigned long int number  unsigned int index)
 {
-	unsigned int i;
+	unsigned int index;
 
 	if (number == 0 && index < 64)
 		return (0);
 
-	for (i = 0; i <= 63; number >>= 1, i++)
+	for (index = 0; i <= 63; number >>= 1, i++)
 	{
 		if (index == i)
 		{
