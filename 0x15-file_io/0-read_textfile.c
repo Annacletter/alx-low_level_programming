@@ -1,12 +1,12 @@
-#include <stdio.h>>
+#include <stdio.h>
 #include "main.h"
 
 /**
  * read_textfile - prints a text file and reads it.
  * @filename: filename
- * @letters: The numbers and letters that should bethat the program should be read and printed.
+ * @letters: The program should  read and print letters and numbers.
  * @filename: This is the filename of the Program.
- * Return: The correct number.
+ * Return: Always 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
