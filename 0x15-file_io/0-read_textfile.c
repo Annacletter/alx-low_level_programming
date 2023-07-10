@@ -6,9 +6,8 @@
  * @filename: filename
  * @letters: The program should  read and print letters and numbers.
  * @filename: This is the filename of the Program.
- * Return: Always 0
+ * Return: Always 0.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
