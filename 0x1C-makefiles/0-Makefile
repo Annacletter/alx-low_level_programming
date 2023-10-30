@@ -1,0 +1,3 @@
+all: Alx
+alx: alx.o
+	gcc alx.c main.c -o alx

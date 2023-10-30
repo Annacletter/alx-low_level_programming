@@ -1,0 +1,11 @@
+CC = gcc
+SRC = main.c alx.c
+OBJ = $(SRC:%.c=%.o)
+NAME = alx
+
+all: $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
+
+%.o: %.c
+	$(CC) -c $< -o $@
